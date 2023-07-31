@@ -34,6 +34,12 @@ pub use duplicate::*;
 mod id;
 pub use id::*;
 
+mod stream;
+pub use stream::*;
+
+mod sink;
+pub use sink::*;
+
 pub trait System {
     type In;
     type Out;
