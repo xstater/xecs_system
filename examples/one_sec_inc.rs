@@ -2,7 +2,7 @@
 
 use std::time::Duration;
 
-use xecs_system::{constant, System, sum, from_fn, from_async_fn};
+use xecs_system::{constant, System, sum, from_fn, from_async_fn, ArrowSystem};
 
 #[tokio::main]
 async fn main(){

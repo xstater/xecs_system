@@ -24,7 +24,7 @@ pub fn count<T>() -> Count<T>{
 
 #[cfg(test)]
 mod test {
-    use crate::{from_fn, System, count};
+    use crate::{from_fn, System, count, ArrowSystem};
 
     #[tokio::test]
     async fn basic() {

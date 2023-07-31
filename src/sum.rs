@@ -30,7 +30,7 @@ where T: AddAssign + Clone + Default{
 
 #[cfg(test)]
 mod test {
-    use crate::{from_fn, System, sum};
+    use crate::{from_fn, System, sum, ArrowSystem};
 
     #[tokio::test]
     async fn basic() {

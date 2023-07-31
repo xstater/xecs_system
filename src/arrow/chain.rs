@@ -26,7 +26,7 @@ where
 mod test {
     use rand::Rng;
 
-    use crate::{from_fn, System};
+    use crate::{from_fn, System, ArrowSystem};
 
     #[tokio::test]
     async fn basic() {
