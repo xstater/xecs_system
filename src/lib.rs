@@ -31,6 +31,9 @@ pub use result::*;
 mod duplicate;
 pub use duplicate::*;
 
+mod id;
+pub use id::*;
+
 pub trait System {
     type In;
     type Out;
