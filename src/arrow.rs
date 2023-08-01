@@ -12,6 +12,9 @@ pub use first::*;
 mod second;
 pub use second::*;
 
+mod feedback;
+pub use feedback::*;
+
 use crate::System;
 
 pub trait ArrowSystem: System{
@@ -45,6 +48,14 @@ pub trait ArrowSystem: System{
         Second { 
             system: self,
             _marker: PhantomData::default()
+        }
+    }
+
+    fn feedback<T>(self, init_value: T) -> Feedback<Self,T> 
+    where Self: Sized{
+        Feedback{
+            system: self,
+            value : Some(init_value)
         }
     }
 }
